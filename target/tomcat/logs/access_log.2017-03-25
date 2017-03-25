@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [25/Mar/2017:13:58:54 +0200] "GET /Calc/calc.xhtml HTTP/1.1" 404 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [25/Mar/2017:13:58:57 +0200] "GET /practical-work/ HTTP/1.1" 200 1586 http-bio-8080-exec-2 2633
+0:0:0:0:0:0:0:1 - - [25/Mar/2017:13:59:01 +0200] "GET /practical-work/faces/javax.faces.resource/theme.css?ln=primefaces-aristo HTTP/1.1" 304 - http-bio-8080-exec-4 285
+0:0:0:0:0:0:0:1 - - [25/Mar/2017:13:59:01 +0200] "GET /practical-work/faces/javax.faces.resource/styles.css HTTP/1.1" 200 224 http-bio-8080-exec-5 478
