@@ -2,6 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core">
+
+<!--@elvariable id="studentController" type="lt.vtvpmc.ems.pw.webApi.controllers.StudentController"-->
     
     <h:head>
         <title>Main</title>
@@ -10,7 +12,7 @@
 
     <h:body>
         <h:form id="tableActionForm">
-            <h:dataTable value="#{studentListBean.studentList}" var="student">
+            <h:dataTable value="#{studentController.studentList}" var="student">
                 <h:column>
                     <f:facet name="header">
                         First Name
@@ -27,7 +29,7 @@
                     <f:facet name="header">
                         Actions
                     </f:facet>
-                    <h:commandLink actionListener="#{studentListBean.removeStudent(student)}" value="Delete"/>
+                    <h:commandLink actionListener="#{studentController.removeStudent(student)}" value="Delete"/>
                 </h:column>
             </h:dataTable>
         </h:form>

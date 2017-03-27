@@ -1,0 +1,15 @@
+0:0:0:0:0:0:0:1 - - [27/Mar/2017:17:24:08 +0300] "GET /practical-work/ HTTP/1.1" 200 1444 http-bio-8080-exec-1 1891
+0:0:0:0:0:0:0:1 - - [27/Mar/2017:17:24:08 +0300] "GET /practical-work/faces/javax.faces.resource/theme.css?ln=primefaces-aristo HTTP/1.1" 304 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [27/Mar/2017:17:24:08 +0300] "GET /practical-work/faces/javax.faces.resource/styles.css HTTP/1.1" 304 - http-bio-8080-exec-4 16
+0:0:0:0:0:0:0:1 - - [27/Mar/2017:17:24:29 +0300] "POST /practical-work/faces/main.xhtml HTTP/1.1" 200 1161 http-bio-8080-exec-5 172
+0:0:0:0:0:0:0:1 - - [27/Mar/2017:17:24:29 +0300] "GET /practical-work/faces/javax.faces.resource/theme.css?ln=primefaces-aristo HTTP/1.1" 304 - http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [27/Mar/2017:17:24:31 +0300] "POST /practical-work/faces/addNewStudent.xhtml HTTP/1.1" 200 1772 http-bio-8080-exec-8 219
+0:0:0:0:0:0:0:1 - - [27/Mar/2017:17:24:31 +0300] "GET /practical-work/faces/javax.faces.resource/styles.css HTTP/1.1" 304 - http-bio-8080-exec-6 0
+0:0:0:0:0:0:0:1 - - [27/Mar/2017:17:24:31 +0300] "GET /practical-work/faces/javax.faces.resource/theme.css?ln=primefaces-aristo HTTP/1.1" 304 - http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [27/Mar/2017:17:24:31 +0300] "GET /practical-work/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development HTTP/1.1" 304 - http-bio-8080-exec-10 0
+0:0:0:0:0:0:0:1 - - [27/Mar/2017:17:24:34 +0300] "POST /practical-work/faces/main.xhtml HTTP/1.1" 200 1158 http-bio-8080-exec-9 32
+0:0:0:0:0:0:0:1 - - [27/Mar/2017:17:24:34 +0300] "GET /practical-work/faces/javax.faces.resource/theme.css?ln=primefaces-aristo HTTP/1.1" 304 - http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [27/Mar/2017:17:24:36 +0300] "POST /practical-work/faces/addNewPlan.xhtml HTTP/1.1" 200 1998 http-bio-8080-exec-9 31
+0:0:0:0:0:0:0:1 - - [27/Mar/2017:17:24:36 +0300] "GET /practical-work/faces/javax.faces.resource/styles.css HTTP/1.1" 304 - http-bio-8080-exec-6 0
+0:0:0:0:0:0:0:1 - - [27/Mar/2017:17:24:36 +0300] "GET /practical-work/faces/javax.faces.resource/theme.css?ln=primefaces-aristo HTTP/1.1" 304 - http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [27/Mar/2017:17:24:36 +0300] "GET /practical-work/faces/javax.faces.resource/jsf.js?ln=javax.faces&stage=Development HTTP/1.1" 304 - http-bio-8080-exec-10 0

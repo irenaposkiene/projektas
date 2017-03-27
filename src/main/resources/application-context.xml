@@ -41,6 +41,8 @@
         <property name="databasePlatform" value="org.hibernate.dialect.H2Dialect" />
     </bean>
  
+ 
+ 	
     <bean id="jpaDialect" class="org.springframework.orm.jpa.vendor.HibernateJpaDialect" />
  
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">

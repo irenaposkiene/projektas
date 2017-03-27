@@ -12,10 +12,13 @@ public class NewStudentBean {
     
     private String studentFirstName;
     private String studentLastName;
+    private String studentBirthday;
 
-    @Transactional
+   
+
+	@Transactional
     public String save() {
-        Student student = new Student(studentFirstName, studentLastName);
+        Student student = new Student(studentFirstName, studentLastName, studentBirthday);
         entityManager.persist(student);
         return "main";
     }
@@ -36,5 +39,11 @@ public class NewStudentBean {
         this.studentLastName = studentLastName;
     }
 
+    public String getStudentBirthday() {
+		return studentBirthday;
+	}
 
+	public void setStudentBirthday(String studentBirthday) {
+		this.studentBirthday = studentBirthday;
+	}
 }

@@ -13,19 +13,19 @@
             <h:dataTable value="#{studentListBean.studentList}" var="student">
                 <h:column>
                     <f:facet name="header">
-                        First Name
+                       
                     </f:facet>
                     <h:outputText value="#{student.firstName}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">
-                        Last Name
+                        
                     </f:facet>
                     <h:outputText value="#{student.lastName}"/>
                 </h:column>
                 <h:column>
                     <f:facet name="header">
-                        Actions
+                       
                     </f:facet>
                     <h:commandLink actionListener="#{studentListBean.removeStudent(student)}" value="Delete"/>
                 </h:column>
@@ -34,6 +34,8 @@
 
         <h:form id="actionForm">
             <h:commandButton id="addNewStudentBtn" action="addNewStudent" value="Add New Student"/>
+           <h:commandButton id="addNewStudentBtn2" action="addNewPlan" value="Add New Plan"/>
+          
         </h:form>
 
     </h:body>

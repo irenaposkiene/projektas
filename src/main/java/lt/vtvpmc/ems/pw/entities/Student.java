@@ -6,8 +6,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
 
+
 @Entity
-public class Student implements Serializable {
+public class Student extends StudentFeatures implements Serializable {
 
     /**
      *
@@ -19,12 +20,18 @@ public class Student implements Serializable {
     private Long id;
     
     private String firstName;
-    
     private String lastName;
+    
+    private String birthday;
+    
+    
 
-    public Student(String firstName, String lastName) {
+    public Student(String firstName, String lastName, String birthday) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.birthday =birthday;
+      
+        
     }
 
     public Student() {
@@ -34,7 +41,15 @@ public class Student implements Serializable {
         return id;
     }
 
-    public void setId(Long id) {
+    public String getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
+	}
+
+	public void setId(Long id) {
         this.id = id;
     }
 
