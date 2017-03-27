@@ -17,7 +17,14 @@
                 <h:outputText value="Surname:"/>
                 <h:inputText id="clientSurname" value="#{newStudentBean.studentLastName}" required="true"/>
                 <h:message for="clientSurname"/>
-
+                
+                
+              <h3>Lessons</h3>
+			<h:selectOneMenu value="#{student2.subject1}" style="color:red">
+			<f:selectItems value="#{student2.subject1Options}" />
+			</h:selectOneMenu>
+            <br/><br/>
+            
             </h:panelGrid>
             <h:commandButton action="#{newStudentBean.save()}" value="Add"/>
         </h:form>

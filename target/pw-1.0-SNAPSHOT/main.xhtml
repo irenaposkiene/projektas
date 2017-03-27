@@ -27,15 +27,94 @@
                 </h:column>
                 <h:column>
                     <f:facet name="header">
+                        Birthday
+                    </f:facet>
+                    <h:outputText value="#{student.birthday}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        Adress
+                    </f:facet>
+                    <h:outputText value="#{student.adress}"/>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        Phone
+                    </f:facet>
+                <h:selectOneRadio value="#{student.phone}">
+          			 <f:selectItem itemValue="Mobile" itemLabel="Mobile" />
+         		     <f:selectItem itemValue="Home" itemLabel="Home" />
+       			 </h:selectOneRadio>
+         
+                </h:column>
+                  <h:column>              
+                 <f:facet name="header">
+                       Email
+                    </f:facet>
+                    <h:outputText value="#{student.email}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        Education
+                    </f:facet>
+   		        <h:selectManyListbox value="#{student.education}">
+        		<f:selectItem itemValue="Vidurinis" itemLabel="Vidurinis" />
+        		<f:selectItem itemValue="Aukštesnysis" itemLabel="Aukštesnysis" />
+        		<f:selectItem itemValue="Aukštasis universitetinis" itemLabel="Aukštasis universitetinis" />
+   				<f:selectItem itemValue="Aukštasis neuniversitetinis" itemLabel="Aukštasis neuniversitetinis" />
+   				 </h:selectManyListbox>
+                 
+                </h:column>
+                
+                 <h:column>              
+                 <f:facet name="header">
+                       School
+                    </f:facet>
+                    <h:outputText value="#{student.school}"/>
+                </h:column>            
+                
+                <h:column>              
+                 <f:facet name="header">
+                       The Date of the school graduation
+                    </f:facet>
+                    <h:outputText value="#{student.schoolEndDate}"/>
+                </h:column>     
+                
+               <f:facet name="header">
+                     Location
+                    </f:facet>
+			<h:selectOneMenu value="#{student.town}">
+			<f:selectItems value="#{student.location}" />
+			</h:selectOneMenu>
+            <br/><br/>
+    
+      	<f:facet name="header">
+                       Family state
+                    </f:facet>
+         <h:selectOneRadio value="#{student.familyState}" >
+            <f:selectItem itemValue="Married" itemLabel="Married" />
+            <f:selectItem itemValue="Single" itemLabel="Single" />
+            <f:selectItem itemValue="Divorced" itemLabel="Divorced" />
+            
+         </h:selectOneRadio>			
+		 
+		</h:form>
+                <h:column>
+                    <f:facet name="header">
                         Actions
                     </f:facet>
                     <h:commandLink actionListener="#{studentController.removeStudent(student)}" value="Delete"/>
                 </h:column>
             </h:dataTable>
         </h:form>
+        
+        
+        
 
         <h:form id="actionForm">
             <h:commandButton id="addNewStudentBtn" action="addNewStudent" value="Add New Student"/>
+            
       	    <h:commandButton id="addNewPlanBtn" action="addNewPlan" value="Add New Plan"/>
        
         </h:form>
